@@ -27,6 +27,8 @@ public class TelefoneCelularController {
         System.out.println("Informe se o celular está ligado: ");
         boolean ligado = scanner.nextBoolean();
 
+        scanner.close();
+
         TelefoneCelularModel celular = new TelefoneCelularModel(marca, modelo, sistemaOperacional, ano, armazenamento, ligado);
 
         System.out.println("----------Info Celular----------");
